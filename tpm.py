@@ -8,9 +8,9 @@ import os
     
 
 parser = argparse.ArgumentParser(description='convert counts to tpm values')
-parser.add_argument('-i', '--infile', help='REVO results csv file', required =True)
+parser.add_argument('-i', '--infile', help='counts values csv file', required =True)
 parser.add_argument('-l', '--length', help='list of gene name and length', required =True)
-parser.add_argument('-o', '--outfile', help='REVO results csv file', required =True)
+parser.add_argument('-o', '--outfile', help='converted values csv file', required =True)
 
 args = parser.parse_args()
 length = args.length
